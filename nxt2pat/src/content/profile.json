@@ -1,0 +1,100 @@
+{
+  "name": "Natthaphat Patthaisong",
+  "thaiName": "นายณัฐภัทร ปัดไธสง",
+  "school": "โรงเรียนเทพศิรินทร์ สมุทรปราการ",
+  "handle": "@nxt2pat",
+  "headline": "Student Innovator · Embedded Systems & Software Developer",
+  "bio": "สวัสดีครับ ผมนายณัฐภัทร ปัดไธสง มีความหลงใหลในการเชื่อมโยงระหว่างฮาร์ดแวร์และซอฟต์แวร์เข้าด้วยกัน ตั้งแต่การต่อวงจร ทดลองกับไมโครคอนโทรลเลอร์ ไปจนถึงการเขียนโปรแกรมและพัฒนาเว็บแอปพลิเคชัน เพื่อสร้างผลงานและนวัตกรรมที่ช่วยแก้ปัญหาและตอบโจทย์การใช้งานจริงในชีวิตประจำวัน",
+  "philosophy": "ตั้งคำถามให้ลึก แล้วพิสูจน์ด้วยการลงมือทำจริง วิเคราะห์ต้นตอของปัญหาอย่างเป็นระบบ เชื่อมโยงตรรกะของโปรแกรมเข้ากับวงจรฮาร์ดแวร์ และพัฒนาผ่านการสร้างชิ้นงานต้นแบบซ้ำๆ เพื่อให้มั่นใจว่าผลงานทุกชิ้นทำงานได้เสถียร ปลอดภัย และสร้างประโยชน์ได้จริง",
+  "location": "Samut Prakan, Thailand",
+  "timezone": "UTC+7 · Indochina Time",
+  "statusText": "Student Innovator // Debsirin Samutprakarn",
+  "hardwareCreed": {
+    "philosophy": "ตั้งคำถามให้ลึก แล้วพิสูจน์ด้วยการลงมือทำจริง เชื่อมต่อวงจรและโค้ดเพื่อสร้างสรรค์นวัตกรรมที่แก้ปัญหาได้จริง",
+    "primaryFocus": "Embedded IoT, Python, JavaScript Tools & Creative Games",
+    "keyProjects": "DustWatch (NSC 2026), EERC Robotics 2026, BOSF 2026 Jakarta, ECO FLOAT (Mahidol), TransForge, MedVision AR, TugOfWarMath"
+  },
+  "hardwareFleet": [
+    {
+      "name": "Desktop Workstation",
+      "codename": "Perseverance",
+      "type": "Primary Desktop",
+      "cpu": "Intel Core i3-9100",
+      "ram": "12GB DDR4 (8+4GB)",
+      "gpu": "AMD Radeon RX 590 GME (8GB)",
+      "os": "Windows 11 Pro",
+      "role": "คอมพิวเตอร์หลักสำหรับพัฒนาโปรแกรม คอมไพล์โค้ด และทดสอบระบบ",
+      "status": "Active Workstation"
+    },
+    {
+      "name": "Portable Laptop",
+      "codename": "Rosalind",
+      "type": "Portable Rig",
+      "cpu": "AMD Athlon 3050u",
+      "ram": "16GB DDR4",
+      "gpu": "AMD Radeon Graphics on CPU",
+      "os": "Windows 11 Pro",
+      "role": "แล็ปท็อปพกพาสำหรับนำไปทดสอบภาคสนาม (Field Telemetry), แฟลชบอร์ด ESP32 และพรีเซนต์งาน",
+      "status": "Active Field"
+    },
+    {
+      "name": "Homelab Server",
+      "codename": "Pioneer",
+      "type": "Server Node",
+      "cpu": "Intel Core i5-3570",
+      "ram": "4GB DDR3",
+      "gpu": "Intel HD Graphics",
+      "os": "Windows 10 Pro",
+      "role": "เซิร์ฟเวอร์จำลองในบ้าน รัน API Backend จัดเก็บฐานข้อมูล และรันเซอร์วิสพื้นหลัง",
+      "status": "Active Server"
+    }
+  ],
+  "socialLinks": {
+    "github": "https://github.com/nxt2pat",
+    "itchio": "https://nxt2pat.itch.io",
+    "facebook": "https://www.facebook.com/share/1K5uoK1xsD/",
+    "instagram": "https://instagram.com/_akira.soju",
+    "gmail": "mailto:nxt2pat@gmail.com",
+    "discord": "https://discord.com/nxt2pat_"
+  },
+  "skills": [
+    {
+      "category": "Embedded & IoT",
+      "items": [
+        "ESP32",
+        "Arduino IDE",
+        "Sensors & Circuitry",
+        "Autonomous Robotics"
+      ]
+    },
+    {
+      "category": "Languages & Systems",
+      "items": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "C / C++",
+        "HTML / CSS"
+      ]
+    },
+    {
+      "category": "Web & Architecture",
+      "items": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Supabase",
+        "Bun"
+      ]
+    },
+    {
+      "category": "Game Dev & Creative Tools",
+      "items": [
+        "Pygame",
+        "Ren'Py",
+        "Itch.io Publishing",
+        "Unity"
+      ]
+    }
+  ]
+}

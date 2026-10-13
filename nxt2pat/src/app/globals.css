@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --color-cosmos: #F7F6FF;
+    --color-deep: #1C1838;
+    --color-card: #FFFFFF;
+    --color-card-dark: #0F121C;
+    --color-card-border: rgba(107, 94, 228, 0.12);
+    --color-ink: #6B5EE4;
+    --color-ink-hover: #5849D6;
+    --color-ink-light: #EEECFC;
+    --color-cyan: #38BDF8;
+    --color-cyan-glow: rgba(56, 189, 248, 0.25);
+    --color-emerald: #34D399;
+    --color-amber: #F59E0B;
+    --color-muted: #64748B;
+    --color-muted-light: #94A3B8;
+
+    --bg-surface: var(--color-cosmos);
+    --text-primary: var(--color-deep);
+  }
+
+  .dark {
+    /* Upgraded Obsidian & Electric Violet Palette */
+    --color-cosmos: #08090E;
+    --color-deep: #F3F4F8;
+    --color-card: #0F121C;
+    --color-card-dark: #0F121C;
+    --color-card-border: rgba(157, 147, 255, 0.18);
+    --color-ink: #9D93FF;
+    --color-ink-hover: #B7AFFF;
+    --color-ink-light: #161928;
+    --color-cyan: #38BDF8;
+    --color-cyan-glow: rgba(56, 189, 248, 0.4);
+    --color-emerald: #34D399;
+    --color-amber: #FBBF24;
+    --color-muted: #94A3B8;
+    --color-muted-light: #64748B;
+
+    --bg-surface: var(--color-cosmos);
+    --text-primary: var(--color-deep);
+  }
+}
+
+@theme {
+  --color-cosmos: var(--color-cosmos);
+  --color-deep: var(--color-deep);
+  --color-card: var(--color-card);
+  --color-card-dark: var(--color-card-dark);
+  --color-card-border: var(--color-card-border);
+  --color-ink: var(--color-ink);
+  --color-ink-hover: var(--color-ink-hover);
+  --color-ink-light: var(--color-ink-light);
+  --color-cyan: var(--color-cyan);
+  --color-cyan-glow: var(--color-cyan-glow);
+  --color-emerald: var(--color-emerald);
+  --color-amber: var(--color-amber);
+  --color-muted: var(--color-muted);
+  --color-muted-light: var(--color-muted-light);
+
+  --font-serif: var(--font-dm-serif), var(--font-trirong), Georgia, serif;
+  --font-sans: var(--font-plus-jakarta), var(--font-ibm-plex-sans-thai), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-space-mono), var(--font-bai-jamjuree), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --font-thai-mono: var(--font-bai-jamjuree), var(--font-space-mono), monospace;
+  --font-thai-serif: var(--font-trirong), var(--font-dm-serif), serif;
+  --font-thai-sans: var(--font-ibm-plex-sans-thai), var(--font-plus-jakarta), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: background-color 0.65s cubic-bezier(0.16, 1, 0.3, 1), color 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  transition: background-color 0.65s cubic-bezier(0.16, 1, 0.3, 1), color 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+header {
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+
+/* Glassmorphism & Aurora Glows */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--color-card-border);
+  transition: background-color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.dark .glass-panel {
+  background: rgba(15, 18, 28, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(157, 147, 255, 0.18);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.6);
+}
+
+.nebula-gradient {
+  background: radial-gradient(circle at 50% 0%, rgba(107, 94, 228, 0.12) 0%, rgba(56, 189, 248, 0.05) 50%, transparent 100%);
+  transition: background 0.7s ease;
+}
+
+.dark .nebula-gradient {
+  background: radial-gradient(circle at 50% 0%, rgba(157, 147, 255, 0.16) 0%, rgba(56, 189, 248, 0.08) 45%, transparent 80%);
+}
+
+.terminal-badge {
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+/* Smooth Focus and Transitions */
+*:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
